@@ -26,6 +26,56 @@ jobs:
       - name: 'do push'
         run: git push origin :${{ github.ref }}
 
-# 目标是打算推送 release-* ，然后触发 release-i 接着删除 release-*
-# 还是需要通过打 tag 的形式去处理这方面的调整
-# 现在唯一的问题就是 generate web 如何处理
+name: CI
+
+on:
+  push:
+    tags:
+      - "release"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Initialize the NPM config
+        run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Run release
+        run: yarn release:ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish done
+        run: |
+          echo "Publish done"
+
+      - name: 'do remove'
+        run: git tag -d ${{ github.ref_name }}
+
+      - name: 'do push'
+        run: git push origin :${{ github.ref }}
+
+  # build-web:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v3
+
+  #     - name: Setup
+  #       uses: ./.github/actions/setup
+
+  #     - name: Build example for Web
+  #       run: |
+  #         yarn example expo export:web
