@@ -1,3 +1,7 @@
+# Changelog
+
+## 1.3.1 (2023-09-07)
+
 ## [1.0.0](https://github.com/carbon-design-system/gatsby-theme-carbon/compare/v1.2.2...v1.3.0) (2023-09-06)
 
 
@@ -287,4 +291,3 @@
 * lakdsjflaksdf ([fa8e0ef](https://github.com/carbon-design-system/gatsby-theme-carbon/commit/fa8e0ef69008e51238e74b052336df6e47c9d889))
 * release ([4e881b6](https://github.com/carbon-design-system/gatsby-theme-carbon/commit/4e881b6347866303398f27ae3e06f3ebed268a86))
 * test ci ([f6164a2](https://github.com/carbon-design-system/gatsby-theme-carbon/commit/f6164a2ea7622d610add8ea4d7dedc2aab149535))
-
