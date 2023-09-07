@@ -34,6 +34,7 @@ module.exports = {
     release: true,
     releaseName: "v${version}",
     web: true,
+    draft: true,
     comments: {
       submit: true,
     },
