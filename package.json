@@ -42,6 +42,11 @@
     "**/.cache/",
     "**/build/"
   ],
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint --edit $HUSKY_GIT_PARAMS",
