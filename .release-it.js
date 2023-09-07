@@ -32,6 +32,9 @@ module.exports = {
   },
   github: {
     release: true,
+    comments: {
+      submit: true,
+    },
   },
   plugins: {
     "@release-it/conventional-changelog": {
