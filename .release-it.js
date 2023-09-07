@@ -41,18 +41,14 @@ module.exports = {
         name: "conventionalcommits",
         types,
         preMajor: false,
-        gitRawCommits: {
-          context: {
-            format:
-              "%B%n-hash-%n%H%n-gitTags-%n%d%n-committerDate-%n%ci%n-authorName-%n%an%n-authorEmail-%n%ae",
-          },
-        },
       },
       infile: "CHANGELOG.md",
       header: "# Changelog",
       ignoreRecommendedBump: false,
-      append: true,
-      releaseCount: 0,
+      gitRawCommitsOpts: {
+        format:
+          "%B%n-hash-%n%H%n-gitTags-%n%d%n-committerDate-%n%ci%n-authorName-%n%an%n-authorEmail-%n%ae",
+      },
     },
 
     // 'parserOpts': {
