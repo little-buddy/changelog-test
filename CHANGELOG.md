@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.0 (2023-09-07)
+
+
+### ✨ Features
+
+* test do ([3ef1cef](https://github.com/carbon-design-system/gatsby-theme-carbon/commit/3ef1cef09da8d78f6e382509c13f8614789fad70))
+
 ## 1.3.1 (2023-09-07)
 
 ## [1.0.0](https://github.com/carbon-design-system/gatsby-theme-carbon/compare/v1.2.2...v1.3.0) (2023-09-06)
