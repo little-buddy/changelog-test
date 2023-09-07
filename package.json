@@ -30,7 +30,7 @@
     "lint:scss": "stylelint \"packages/**/*.scss\" --fix",
     "release": "release-it",
     "release:pre": "release-it --preRelease=next",
-    "release:ci": "dotenv release-it --ci",
+    "release:ci": "dotenv release-it --",
     "release:dry": "release-it --dry-run"
   },
   "publishConfig": {
