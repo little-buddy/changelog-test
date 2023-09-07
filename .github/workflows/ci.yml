@@ -20,6 +20,6 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: 'do remove'
-        run: git tag -d ${{ github.ref }}
+        run: git tag -d ${{ github.ref_name }}
       - name: 'do push'
-        run: git push origin refs/tags/${{ github.ref }}
+        run: git push origin ${{ github.ref }}
