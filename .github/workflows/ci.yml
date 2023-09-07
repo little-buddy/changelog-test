@@ -21,4 +21,5 @@ jobs:
 
       - name: 'do remove'
         run: git tag -d ${{ github.ref }}
+      - name: 'do push'
         run: git push origin refs/tags/${{ github.ref }}
