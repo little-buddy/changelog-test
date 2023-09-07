@@ -23,15 +23,15 @@ const createTypes = () => {
 const types = createTypes();
 
 module.exports = {
-  //   git: {
-  //     commitMessage: "chore: release v${version}",
-  //     tagName: "v${version}",
-  //   },
+  git: {
+    commitMessage: "chore: release v${version}",
+    tagName: "v${version}",
+  },
   npm: {
     publish: false,
   },
   github: {
-    release: false,
+    release: true,
   },
   plugins: {
     "@release-it/conventional-changelog": {
