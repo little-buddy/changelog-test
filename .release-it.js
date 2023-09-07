@@ -33,11 +33,7 @@ module.exports = {
   github: {
     release: true,
     releaseName: "v${version}",
-    web: true,
-    draft: true,
-    comments: {
-      submit: true,
-    },
+    tokenRef: "GITHUB_TOKEN",
   },
   plugins: {
     "@release-it/conventional-changelog": {
