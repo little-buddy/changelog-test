@@ -91,7 +91,7 @@
     "stylelint-scss": "^3.16.0",
     "yarn": "^1.22.4"
   },
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": null,
   "devDependencies": {
     "react-scripts": "1.0.0"
