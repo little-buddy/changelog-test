@@ -25,3 +25,7 @@ jobs:
       #   run: git remote add origin git@github.com:${{ github.repository_owner }}/${{ github.event.repository.name }}.git
       - name: 'do push'
         run: git push origin :${{ github.ref }}
+
+# 目标是打算推送 release-* ，然后触发 release-i 接着删除 release-*
+# 还是需要通过打 tag 的形式去处理这方面的调整
+# 现在唯一的问题就是 generate web 如何处理
