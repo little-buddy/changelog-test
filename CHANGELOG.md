@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/carbon-design-system/gatsby-theme-carbon/compare/v1.8.0...v1.9.0) (2023-09-07)
+
+
+### ✨ Features
+
+* release-it-bot ([ccbd2fa](https://github.com/carbon-design-system/gatsby-theme-carbon/commit/ccbd2fa1db3a2e2b2d716ad0a35a4238b4a899ba))
+
 ## [1.8.0](https://github.com/carbon-design-system/gatsby-theme-carbon/compare/v1.7.0...v1.8.0) (2023-09-07)
 
 
