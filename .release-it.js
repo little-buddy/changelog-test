@@ -32,6 +32,8 @@ module.exports = {
   },
   github: {
     release: true,
+    releaseName: "v${version}",
+    web: true,
     comments: {
       submit: true,
     },
