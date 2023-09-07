@@ -31,8 +31,7 @@ jobs:
 
       - name: setup git
         run: |
-          git config --global user.name "buddy"
-          git config --global user.email "litoubuddy@gmail.com"
+          git config --global user.name "release-it-bot"
 
       - name: Run release
         run: yarn release:ci
